@@ -1,0 +1,20 @@
+<html>
+<head>
+    <title>Google Trends</title>
+</head>
+<body>
+    <h1>Google Trends Comparison</h1>
+    <form method="POST" action="{{ url_for('results') }}">
+        <label for="keyword1">Keyword 1:</label>
+        <input type="text" name="keyword1" id="keyword1" required>
+        <br>
+        <label for="keyword2">Keyword 2:</label>
+        <input type="text" name="keyword2" id="keyword2" required>
+        <br>
+        <label for="timeframe">Timeframe:</label>
+        <input type="text" name="timeframe" id="timeframe" placeholder="e.g. today 5-y" required>
+        <br>
+        <input type="submit" value="Generate Charts">
+    </form>
+</body>
+</html>
